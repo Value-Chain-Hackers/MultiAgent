@@ -1,131 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher A.I. for Inchainge</title>
-
-    <!-- Chatbot Integration -->
-    <script>
-        window.difyChatbotConfig = {
-            token: 'mGJzYQAsA24CLuo2',
-            baseUrl: 'https://web-production-ae39.up.railway.app'
-        };
-    </script>
-    <script
-        src="https://web-production-ae39.up.railway.app/embed.min.js"
-        id="mGJzYQAsA24CLuo2"
-        defer>
-    </script>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-        h1, h2, h3 { color: #333; }
-        h1 { text-align: center; }
-        ul { padding-left: 20px; }
-        .content-section { margin-bottom: 30px; }
-
-        /* Chatbot customization styles */
-        #dify-chatbot-bubble-button {
-            background-color: #1C64F2 !important;
-        }
-        #dify-chatbot-bubble-window {
-            width: 24rem !important;
-            height: 40rem !important;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Agent Prompting for In-Game Assistance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      color: #1C64F2;
+    }
+    p {
+      line-height: 1.6;
+    }
+    #dify-chatbot-bubble-button {
+      background-color: #1C64F2 !important;
+    }
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      height: 40rem !important;
+    }
+  </style>
 </head>
 <body>
-
-    <h1>Teacher A.I. for Inchainge Simulations</h1>
-    
-    <div class="content-section">
-        <h2>1. Project Overview</h2>
-        <h3>Objective</h3>
-        <p>To explore the integration of artificial intelligence (AI) into Inchainge's simulation games to enhance learning experiences, provide real-time support, automate decision-making processes, and test how well current AI models can navigate and succeed in the games.</p>
-        
-        <h3>Background</h3>
-        <p>Inchainge, a company specializing in supply chain and company simulation games, is keen to leverage recent developments in AI to improve its product offerings. With a strong global presence and a reputation for innovation, Inchainge aims to incorporate AI to offer advanced game-based learning solutions.</p>
-        
-        <h3>Key Questions from The Fresh Connection</h3>
-        <ul>
-            <li><strong>AI-Powered Game Assistance:</strong> Can AI, like ChatGPT, provide real-time support and guidance within the game environment?</li>
-            <li><strong>AI-Based Performance Analysis and Tips:</strong> How can AI analyze game outcomes to offer personalized feedback and strategic advice?</li>
-            <li><strong>AI as a Facilitator:</strong> What role can AI play in guiding reflection sessions and supporting educators to ensure consistent debriefing?</li>
-            <li><strong>AI for Role Simulation:</strong> Can AI simulate management team roles, creating interactive non-player characters (NPCs) to enrich the learning experience?</li>
-            <li><strong>AI to Cheat the Game:</strong> Is it possible for AI to independently play the game, make decisions, and effectively "cheat" by optimizing strategies without prior information?</li>
-        </ul>
-    </div>
-
-    <div class="content-section">
-        <h2>2. Project Scope</h2>
-        <h3>AI Integration Goals</h3>
-        <ul>
-            <li><strong>Real-Time Game Assistance:</strong> Develop an AI model capable of providing in-game assistance by responding to player queries, offering hints, and guiding decisions based on game dynamics.</li>
-            <li><strong>Performance Analysis and Feedback:</strong> Utilize AI to analyze player performance data and generate customized feedback and tips for improvement.</li>
-            <li><strong>Facilitator Role:</strong> Implement AI to act as a facilitator for post-game reflections, aiding teachers and learners in understanding outcomes and enhancing the learning process.</li>
-            <li><strong>Role Simulation:</strong> Create AI-driven NPCs that simulate different management roles within the game, enhancing the interactive experience.</li>
-            <li><strong>Automated Gameplay (AI Cheating):</strong> Train an AI to autonomously play the game, making strategic decisions to test its ability to outperform human players or provide optimal solutions.</li>
-        </ul>
-    </div>
-
-    <div class="content-section">
-        <h2>3. Project Phases</h2>
-        <h3>Phase 1: Research and Development</h3>
-        <ul>
-            <li><strong>1.1 AI Model Selection:</strong> Evaluate and select AI models based on their suitability for real-time game assistance and decision-making.</li>
-            <li><strong>1.2 Game Integration Strategy:</strong> Design the architecture for integrating AI with Inchainge's game platforms.</li>
-        </ul>
-        
-        <h3>Phase 2: Prototype Development</h3>
-        <ul>
-            <li><strong>2.1 AI-Powered Game Assistance Prototype:</strong> Develop and test a prototype for real-time AI support.</li>
-            <li><strong>2.2 AI-Based Performance Analysis Prototype:</strong> Create a module that utilizes AI to analyze player performance.</li>
-            <li><strong>2.3 AI Facilitator Prototype:</strong> Implement an AI-driven facilitator for post-game debrief sessions.</li>
-            <li><strong>2.4 Role Simulation Prototype:</strong> Develop AI-driven NPCs to simulate different roles within the game.</li>
-            <li><strong>2.5 Automated Gameplay (AI Cheating) Prototype:</strong> Train an AI model to play the game autonomously.</li>
-        </ul>
-
-        <h3>Phase 3: Pilot Testing and Feedback</h3>
-        <ul>
-            <li><strong>3.1 Pilot Testing:</strong> Conduct comprehensive pilot testing with diverse user groups.</li>
-            <li><strong>3.2 Feedback Analysis:</strong> Refine AI models based on user feedback and performance data.</li>
-        </ul>
-        
-        <h3>Phase 4: Full Implementation</h3>
-        <ul>
-            <li><strong>4.1 Final Integration:</strong> Fully integrate AI solutions into Inchainge's game platforms.</li>
-            <li><strong>4.2 Training and Support:</strong> Provide training sessions for educators on AI-powered features.</li>
-        </ul>
-        
-        <h3>Phase 5: Evaluation and Iteration</h3>
-        <ul>
-            <li><strong>5.1 Performance Evaluation:</strong> Continuously monitor AI performance and user feedback.</li>
-            <li><strong>5.2 Iterative Improvements:</strong> Improve AI models and integration strategies based on evaluation data.</li>
-        </ul>
-    </div>
-
-    <div class="content-section">
-        <h2>4. Roles and Responsibilities</h2>
-        <ul>
-            <li><strong>Project Manager:</strong> Oversee the project and manage timelines.</li>
-            <li><strong>AI Development Team:</strong> Develop, test, and refine AI models.</li>
-            <li><strong>Game Development Team:</strong> Focus on AI integration within the game environment.</li>
-            <li><strong>Educators and Content Specialists:</strong> Provide educational input and help design AI interactions.</li>
-            <li><strong>User Experience (UX) Designers:</strong> Ensure AI enhances the user experience.</li>
-            <li><strong>Pilot Testing Coordinator:</strong> Organize pilot testing and gather feedback.</li>
-        </ul>
-    </div>
-
-    <div class="content-section">
-        <h2>5. Expected Outcomes</h2>
-        <p>The AI integration project aims to:</p>
-        <ul>
-            <li>Enhance learning experiences through AI-powered features.</li>
-            <li>Boost engagement and satisfaction for players and educators.</li>
-            <li>Provide insights into AI’s role in educational simulation games.</li>
-            <li>Position Inchainge as a leader in AI-driven educational technology.</li>
-        </ul>
-    </div>
-    
+  <h1>Multi-Agent Prompting for In-Game Assistance</h1>
+  <p>In the world of interactive simulations, multi-agent prompting offers a powerful way to enhance in-game learning and decision-making. By using a system of specialized agents, players can receive real-time insights, strategy guidance, and performance feedback tailored to their roles within a game environment. This approach allows for dynamic and personalized support, helping players to understand complex systems, improve their strategy, and make informed decisions on the fly.</p>
+  
+  <p>Meet "Luca," your dedicated supply chain assistant, powered by multi-agent prompting. Luca provides insights based on contextual data and expert supply chain knowledge, guiding players through complex decisions in simulations like *The Fresh Connection*. Whether you're managing inventory, planning production, or optimizing distribution, Luca is here to assist and enhance your in-game learning experience.</p>
+  
+  <!-- Dify Chatbot Embed Script -->
+  <script>
+    window.difyChatbotConfig = {
+      token: 'DhrP4IS2Zr7t8T2R',
+      baseUrl: 'https://web-production-ae39.up.railway.app'
+    };
+  </script>
+  <script
+    src="https://web-production-ae39.up.railway.app/embed.min.js"
+    id="DhrP4IS2Zr7t8T2R"
+    defer>
+  </script>
 </body>
 </html>
