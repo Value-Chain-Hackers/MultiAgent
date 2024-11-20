@@ -3,27 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot Host</title>
+  <title>The Fresh Connection - Game Assistance</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
-    /* Ensures the iframe takes up the full viewport */
-    body, html {
+    body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
+      background-color: #F9F9F9;
+      color: #333;
     }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+    header {
+      background-color: #1C64F2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .card-icon {
+      font-size: 3rem;
+      margin-right: 1rem;
+      color: #1C64F2;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .card p {
+      margin: 0;
+    }
+    footer {
+      background-color: #1C64F2;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://web-production-ae39.up.railway.app/chatbot/qsWU1bvrG2MSS5iB"
-    allow="microphone">
-  </iframe>
+  <header>
+    <h1>The Fresh Connection - Enhance Your Game</h1>
+  </header>
+
+  <div class="container">
+    <h2>About The Fresh Connection</h2>
+    <p>
+      <strong>The Fresh Connection</strong> is an innovative business simulation game where participants run a virtual juice manufacturing company. Teams of four take on the roles of VP Purchasing, VP Operations, VP Supply Chain, and VP Sales to bring the company back on track. Collaboration and cross-functional decision-making are essential to succeed.
+    </p>
+    <p>
+      Participants face real-world dilemmas, apply new concepts, and align strategies with operations to achieve the best performance. This game offers a highly engaging and impactful learning experience for professionals and students alike.
+    </p>
+
+    <h2>Key Features</h2>
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <div>
+        <h3>Interactive Assistance</h3>
+        <p>Get real-time advice tailored to your role in <strong>The Fresh Connection</strong>. Whether you're a VP of Operations or Supply Chain, the AI-powered chatbot provides insights to refine your strategies.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <div>
+        <h3>Data-Driven Decision Making</h3>
+        <p>Leverage actionable insights and KPIs to optimize supply chain management, align strategies, and achieve sustainability goals.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚙️</div>
+      <div>
+        <h3>Customizable Learning Experience</h3>
+        <p>Adjust game complexity and objectives to match your needs, from risk management to carbon footprint optimization.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 The Fresh Connection Assistance. All rights reserved.</p>
+  </footer>
+
+  <!-- Chatbot Embed -->
+  <script>
+    window.difyChatbotConfig = {
+      token: 'ZOkYMGADcyVnxymG',
+      baseUrl: 'https://web-production-ae39.up.railway.app'
+    };
+  </script>
+  <script
+    src="https://web-production-ae39.up.railway.app/embed.min.js"
+    id="ZOkYMGADcyVnxymG"
+    defer>
+  </script>
+  <style>
+    #dify-chatbot-bubble-button {
+      background-color: #1C64F2 !important;
+    }
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      height: 40rem !important;
+    }
+  </style>
 </body>
 </html>
